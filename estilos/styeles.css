@@ -1,0 +1,150 @@
+html{
+    font-size: 62.5%;
+    background: #CDABE4;
+}
+div{
+    font-size: 20px;
+}
+div h1{
+    font-size: 1em;
+}
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header*/
+
+h1{
+    padding: 30px;
+    
+}
+h2{
+    color:#9a3ed8;
+    font-size: 30px;
+    padding: 20px;
+}
+
+/*.grilla{
+    display: grid;
+    grid-template-columns: repeat (3, 1fr) ;
+    grid-auto-rows: 200px 500px 200px;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer"
+    ;
+}*/
+
+header{
+    background: #4A2065;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+}
+header nav ul{
+    color: white;
+    font-size: 20px;
+    list-style: none;
+  
+    
+}
+header nav ul li{ 
+    color: white;
+    text-decoration: none; 
+    list-style-type: none;
+    justify-content: space-around;
+  
+}
+    
+/*main*/
+.texto{
+    padding: 70px;
+    display: flex;
+}
+
+.contenedor{
+    background: #bb96d3;
+    color: beige;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat( 2,auto);
+    gap: 1rem;
+
+}
+.contenedor div{
+    height: 40%;
+}
+.contenedor div img{
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 10%;
+    padding: 10px;
+}
+.servicios{
+    display: flex;
+    
+}
+
+section{
+    padding: 50px;
+}
+
+
+ 
+footer{
+    background: #754692;
+    color: beige;
+    padding: 20px;
+}
+
+
+
+
+
+
+/*------------------------------------*/
+/* mobile */
+@media screen and (min-width: 768px){
+    header{
+        flex-direction: row;
+    }
+    header nav ul{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+    
+    .contenedor{
+        grid-template-columns: repeat(2 , 3fr);
+        grid-template-rows: repeat(2, 3fr);
+        grid-template-areas:
+        "perro1a perro1b"
+        "perro2a perro2b"
+        "perro3a perro3b"; }
+
+    .img-perro1b{
+        grid-area: perro1a;
+    }
+    .img-perro1b{
+        grid-area: perro1b;
+    }
+    .img-perro2a{
+        grid-area: perro2a;
+    }
+    .img-perro2b{
+        grid-area: perro2b;
+    }
+    .img-perro3a{
+        grid-area: perro3a;
+    }
+    .img-perro3b{
+        grid-area: perro3b;
+    }
+}
