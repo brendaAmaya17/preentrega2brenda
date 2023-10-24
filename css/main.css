@@ -5,28 +5,6 @@
 }
 
 /*header*/
-header {
-  background: #4A2065;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px;
-  flex-direction: column;
-}
-header div img nav ul {
-  color: #f9f7fa;
-  font-size: 20px;
-  list-style: none;
-}
-header div img nav ul li {
-  color: #f9f7fa;
-  justify-content: space-around;
-}
-header div img nav ul li a {
-  text-decoration: none;
-  list-style-type: none;
-}
-
 /*main-index*/
 footer {
   background: #754692;
