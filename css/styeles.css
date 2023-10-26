@@ -166,7 +166,7 @@ footer, button{
 
 
 /*------------------------------------*/
-/* mobile */
+/* mobile 
 @media screen and (min-width: 768px){
     header{
         flex-direction: row;
@@ -210,4 +210,10 @@ footer, button{
     .videos{
         display: flex;
     }
-} 
+} */
+
+/* Tablets y phablets 
+@media only screen and (min-width: 576px) and (max-width: 767px){
+
+
+}*/
