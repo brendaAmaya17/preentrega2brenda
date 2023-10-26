@@ -1,0 +1,16 @@
+// servicios
+.servicios {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+
+    .card {
+        &:hover {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+        overflow: hidden;
+    }
+}
