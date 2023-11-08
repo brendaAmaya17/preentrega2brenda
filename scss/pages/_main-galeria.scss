@@ -1,12 +1,20 @@
 // galeria 
-.carousel-inner {
+section.carrusel{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    flex-wrap: wrap;
+    
+    
+}
+
+.carousel-item{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 #centered-container {
     text-align: center;
+    flex-wrap: wrap;
 }
