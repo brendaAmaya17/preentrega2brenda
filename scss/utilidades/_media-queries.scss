@@ -1,7 +1,7 @@
 //medias
 /*------------------------------------*/
 /* mobile */
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 768px){
     header{
         flex-direction: row;
         
@@ -14,8 +14,9 @@
     }
     
     .contenedor{
-        grid-template-columns: auto auto;
-        grid-template-rows: auto auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
         grid-template-areas:
         "perro1a perro1b"
         "perro2a perro2b"
@@ -48,7 +49,7 @@
 }
 
 /* Tablets  */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .contenedor{
         display: flex;
         justify-content: center;
@@ -62,6 +63,12 @@
 
 /* desktop*/
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1025px) {
     
-}
+    .contenedor, .galeria{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }    
+    }

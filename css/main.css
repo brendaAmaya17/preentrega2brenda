@@ -63,9 +63,10 @@ h1, h2 {
 }
 .texto img {
   border: 5px solid #ccc;
-  border-radius: 8px;
+  border-radius: 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -82,34 +83,30 @@ section {
   width: 100%;
   margin: 0 auto;
   padding: 20px;
-  flex-direction: column;
 }
 
 .caja {
   color: whitesmoke;
-  border: 5px solid rgb(131, 90, 165);
-  background-color: #a84bff;
+  border: 5px solid rgb(170, 100, 228);
+  background-color: rgb(141, 72, 206);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.555);
   margin: 15px;
   text-align: center;
-  border-radius: 20%;
+  border-radius: 9%;
+  overflow: hidden;
+}
+.caja:hover {
+  transform: scale(1.1);
+}
+.caja img {
+  border-radius: 7%;
+  padding: 7px;
 }
 
-section.carrusel {
+.carrusel {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-}
-
-.carousel-item {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-#centered-container {
-  text-align: center;
-  flex-wrap: wrap;
 }
 
 .servicios {
@@ -131,7 +128,7 @@ section.carrusel {
   justify-content: space-evenly;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px;
+  padding: 50px;
 }
 
 footer, button {
@@ -144,7 +141,7 @@ footer, button {
 
 /*------------------------------------*/
 /* mobile */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   header {
     flex-direction: row;
   }
@@ -155,8 +152,9 @@ footer, button {
     gap: 10px;
   }
   .contenedor {
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
     grid-template-areas: "perro1a perro1b" "perro2a perro2b" "perro3a perro3b";
   }
   .c1 {
@@ -182,11 +180,18 @@ footer, button {
   }
 }
 /* Tablets  */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   .contenedor {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
-/* desktop*//*# sourceMappingURL=main.css.map */
+/* desktop*/
+@media screen and (max-width: 1025px) {
+  .contenedor, .galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}/*# sourceMappingURL=main.css.map */
